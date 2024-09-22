@@ -11,7 +11,7 @@ interface IRow {
 export const usersApi = createApi({
   reducerPath: 'usersApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'server-production-67ba.up.railway.app/api'
+    baseUrl: 'https://server-production-67ba.up.railway.app/api'
   }),
   tagTypes: ['Users'],
   endpoints: (builder) => ({
