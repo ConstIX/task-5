@@ -29,7 +29,7 @@ const Filter: FC<IFilter> = ({ region, setRegion, seed, setSeed, errors, setErro
 
   const handleExport = async () => {
     const response = await fetch(
-      `http://localhost:5000/api/export-csv?region=${region}&seed=${seed}&errors=${errors}&count=${page * 10}`
+      `server-production-67ba.up.railway.app/api/export-csv?region=${region}&seed=${seed}&errors=${errors}&count=${page * 10}`
     )
 
     if (response.ok) {
